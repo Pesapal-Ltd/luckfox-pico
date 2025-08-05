@@ -159,3 +159,17 @@
 		spi-max-frequency = <50000000>;
 	};
 };
+
+&uart3 {
+        status = "okay";
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart3m1_xfer>;
+        linux,rs485-enabled-at-boot-time;
+};
+
+&uart4 {
+        status = "okay";
+        pinctrl-names = "default";
+        pinctrl-0 = <&uart4m1_xfer &uart4m1_ctsn &uart4m1_rtsn>;
+        linux,rs485-enabled-at-boot-time;
+};
