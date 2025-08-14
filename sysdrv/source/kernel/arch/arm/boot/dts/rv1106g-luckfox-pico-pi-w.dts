@@ -159,3 +159,10 @@
 		spi-max-frequency = <50000000>;
 	};
 };
+
+/**********RS485**********/
+&uart4 {
+	status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart4m0_xfer>;
+};
